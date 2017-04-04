@@ -7,19 +7,26 @@
 .datepicker.dropdown-menu {
   width: 250px;
   height: 270px;
-  button {
+  button, span.btn {
     outline: none;
     border: 0px;
   }
+  thead {
+    abbr {
+      border: none;
+    }
+  }
   tbody {
     height: 180px;
-  }
-  tbody button {
-    padding: 6px;
+    button, span.btn{
+      padding: 6px;
+    }
   }
   &.datepicker-mode-1, &.datepicker-mode-2 {
-    tbody button {
-      height: 65px;
+    tbody {
+      button, span.btn {
+        height: 65px;
+      }
     }
   }
 }
