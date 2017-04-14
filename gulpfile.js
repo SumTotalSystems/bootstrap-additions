@@ -21,6 +21,7 @@ gulp.task('build', gulp.series('ng:build', function afterBuild(done) {
   var paths = config.paths;
   // Delete useless module.* build files
   // del(path.join(paths.dest, 'module.*'), done);
+  done();
 }));
 
 gulp.task('pages', gulp.series('ng:pages', function afterPages(done) {

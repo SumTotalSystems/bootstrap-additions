@@ -4,9 +4,19 @@
  * Datepicker element
  */
 
+
+
 .datepicker.dropdown-menu {
   width: 250px;
   height: 270px;
+  .disabled () {
+    cursor: not-allowed;
+    &:active, &:hover {
+      background: inherit;
+      box-shadow: inherit;
+      color: inherit;
+    }
+  }
   button, span.btn {
     outline: none;
     border: 0px;
@@ -20,6 +30,14 @@
     height: 180px;
     button, span.btn{
       padding: 6px;
+    }
+    td.disabled {
+      &, span.btn {
+        &.btn-primary {
+          .disabled;
+        }
+        .disabled;
+      }
     }
   }
   &.datepicker-mode-1, &.datepicker-mode-2 {

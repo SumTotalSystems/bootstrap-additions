@@ -26,7 +26,7 @@
   "dependencies": {},
   "devDependencies": {
     "del": "^1.2.0",
-    "factory-angular-channels": "^0.7.1",
+    "factory-angular-channels": "SumTotalSystems/factory-angular-channels#fix-npm-dependencies",
     "gulp": "gulpjs/gulp#4.0",
     "ng-factory": "^1.0",
     "undertaker-lib-tasks": "^0.3.1"

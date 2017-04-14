@@ -1,6 +1,6 @@
 /**
  * bootstrap-additions
- * @version v0.3.1 - 2017-04-04
+ * @version v0.3.1 - 2017-04-14
  * @link https://github.com/mgcrea/bootstrap-additions
  * @author Olivier Louvignes <olivier@mg-crea.com> (https://github.com/mgcrea)
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -230,6 +230,30 @@
 .datepicker.dropdown-menu tbody span.btn {
   padding: 6px;
 }
+.datepicker.dropdown-menu tbody td.disabled,
+.datepicker.dropdown-menu tbody td.disabled span.btn {
+  cursor: not-allowed;
+}
+.datepicker.dropdown-menu tbody td.disabled.btn-primary,
+.datepicker.dropdown-menu tbody td.disabled span.btn.btn-primary {
+  cursor: not-allowed;
+}
+.datepicker.dropdown-menu tbody td.disabled.btn-primary:active,
+.datepicker.dropdown-menu tbody td.disabled span.btn.btn-primary:active,
+.datepicker.dropdown-menu tbody td.disabled.btn-primary:hover,
+.datepicker.dropdown-menu tbody td.disabled span.btn.btn-primary:hover {
+  background: inherit;
+  box-shadow: inherit;
+  color: inherit;
+}
+.datepicker.dropdown-menu tbody td.disabled:active,
+.datepicker.dropdown-menu tbody td.disabled span.btn:active,
+.datepicker.dropdown-menu tbody td.disabled:hover,
+.datepicker.dropdown-menu tbody td.disabled span.btn:hover {
+  background: inherit;
+  box-shadow: inherit;
+  color: inherit;
+}
 .datepicker.dropdown-menu.datepicker-mode-1 tbody button,
 .datepicker.dropdown-menu.datepicker-mode-2 tbody button,
 .datepicker.dropdown-menu.datepicker-mode-1 tbody span.btn,
@@ -755,11 +779,62 @@
 .datepicker.dropdown-menu tbody span.btn {
   padding: 6px;
 }
+.datepicker.dropdown-menu tbody td.disabled,
+.datepicker.dropdown-menu tbody td.disabled span.btn {
+  cursor: not-allowed;
+}
+.datepicker.dropdown-menu tbody td.disabled.btn-primary,
+.datepicker.dropdown-menu tbody td.disabled span.btn.btn-primary {
+  cursor: not-allowed;
+}
+.datepicker.dropdown-menu tbody td.disabled.btn-primary:active,
+.datepicker.dropdown-menu tbody td.disabled span.btn.btn-primary:active,
+.datepicker.dropdown-menu tbody td.disabled.btn-primary:hover,
+.datepicker.dropdown-menu tbody td.disabled span.btn.btn-primary:hover {
+  background: inherit;
+  box-shadow: inherit;
+  color: inherit;
+}
+.datepicker.dropdown-menu tbody td.disabled:active,
+.datepicker.dropdown-menu tbody td.disabled span.btn:active,
+.datepicker.dropdown-menu tbody td.disabled:hover,
+.datepicker.dropdown-menu tbody td.disabled span.btn:hover {
+  background: inherit;
+  box-shadow: inherit;
+  color: inherit;
+}
 .datepicker.dropdown-menu.datepicker-mode-1 tbody button,
 .datepicker.dropdown-menu.datepicker-mode-2 tbody button,
 .datepicker.dropdown-menu.datepicker-mode-1 tbody span.btn,
 .datepicker.dropdown-menu.datepicker-mode-2 tbody span.btn {
   height: 65px;
+}
+
+@media screen and (max-width: 767px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 768px) {
+}
+@media (max-width: 767px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 768px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 767px) {
+}
+.modal.center .modal-dialog {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  min-width: 320px;
+  max-width: 630px;
+  width: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 @media screen and (max-width: 767px) {
@@ -1043,31 +1118,4 @@
   border-width: 0 5px 5px;
   border-bottom-color: #000;
   left: 90%;
-}
-
-@media screen and (max-width: 767px) {
-}
-@media (min-width: 768px) {
-}
-@media (min-width: 768px) {
-}
-@media (max-width: 767px) {
-}
-@media (min-width: 768px) {
-}
-@media (min-width: 768px) {
-}
-@media (max-width: 767px) {
-}
-@media (max-width: 767px) {
-}
-.modal.center .modal-dialog {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  min-width: 320px;
-  max-width: 630px;
-  width: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
 }
